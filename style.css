@@ -1,4 +1,5 @@
 :root{
+    /*colour vars*/
     --softRed: hsl(10, 79%, 65%);
     --softerRed: hsl(10, 79%, 80%);
     --cyan: hsl(186, 34%, 60%);
@@ -17,12 +18,14 @@ body{
 }
 
 main{
+    /*centre the card stack*/
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    
     width: 91%;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
 }
 
 .card{
@@ -32,6 +35,7 @@ main{
 
 }
 
+/*red section*/
 #balance-section{
     background-color: var(--softRed);
     height: 96px;
@@ -39,6 +43,7 @@ main{
     color: var(--cream);
     padding-block: 10px;
 
+    /*2 circles logo*/
     background-image: url("./images/logo.svg");
     background-repeat: no-repeat;
     background-size: 62px;
@@ -51,12 +56,14 @@ main{
     margin-bottom: 0px;
 }
 
+
 #balance-amount{
     font-weight: 700;
     font-size: 24px;
     margin-top: 3px;
 }
 
+/*white card*/
 #spending-section{
     margin-top: 15px;
     height: 422px;
@@ -66,11 +73,13 @@ main{
     position: relative;
 }
 
+
 #spending-section h1{
     font-size: 24px;
     color: var(--darkBrown);
 }
 
+/*overall chart section*/
 #bar-chart{
     height: 212px;
     flex-basis: 0;
@@ -82,6 +91,7 @@ main{
     margin: auto -5px auto -5px;
 }
 
+/*column: day name, bar, and (hidden) amount*/
 .chart-column{
     margin-top: auto;
     display: flex;
@@ -89,6 +99,7 @@ main{
     flex-grow: 1;
     flex-basis: 0;
 }
+
 
 .bar{
     background-color: var(--softRed);
@@ -103,6 +114,7 @@ main{
     background-color: var(--softerRed);
 }
 
+/*on current day the relevant bar will be cyan (coded in js)*/
 .bar-current-day{
     background-color: var(--cyan);
 }
@@ -111,7 +123,7 @@ main{
     background-color: var(--lighterCyan);
 }
 
-
+/*label (below bar)*/
 .day-label{
     text-align: center;
     font-weight: 400;
@@ -120,6 +132,7 @@ main{
     margin-top: 10px;
 }
 
+/*appears only when hovered (in JS)*/
 .amount-display{
     display: none;
     text-align: center;
@@ -138,11 +151,10 @@ main{
     font-size: 12px;
 }
 
+/*used only when bar is hovered over*/
 .amount-display-active{
     display: unset;
 }
-
-
 
 
 hr{
@@ -150,13 +162,14 @@ hr{
     border: 1px solid lightgray; /*temporary - change to custom prop*/
 }
 
+/*section below chart*/
 #spending-stats{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-
+/*"Total for month" title*/
 #month-total-section h2{
     font-size: 15px;
     font-weight: 400;
@@ -179,6 +192,7 @@ hr{
 
 }
 
+/*percentage reading*/
 #last-month-diff{
     color: var(--darkBrown);;
     font-weight: 700;
@@ -188,6 +202,7 @@ hr{
 
 }
 
+
 #last-month-diff-section label{
     color: var(--mediumBrown);
     margin-top: 0px;
@@ -195,7 +210,7 @@ hr{
 
 }
 
-
+/*attribution*/
 footer{
     position: absolute;
     right: 0;
@@ -207,19 +222,18 @@ footer{
 
 
 
-/*Desktop Changes:*/
-
+/*Desktop Version:*/
 @media only screen and (min-width: 600px){
     main{
         width: 540px;
     }  
-
 
     .card{
         border-radius: 20px;
         padding-inline: 33px;
     }
 
+    /*red section*/
     #balance-section{
         height: 125px;
         padding-block: 15px;
@@ -236,7 +250,7 @@ footer{
     }
 
 
-
+    /*white card*/
     #spending-section{
         height: 511px;
         margin-top: 25px;
@@ -247,6 +261,7 @@ footer{
         font-size: 32px;
     }
 
+    /*overall chart section*/
     #bar-chart{
         height: 224px;
         margin: auto -9px auto -9px;
@@ -257,11 +272,13 @@ footer{
         margin-left: 9px;
     }
 
+    /*label (below bar)*/
     .day-label{
         font-size: 15px;
         margin-top: 8px;
     }
 
+    /*appears only when hovered (in JS)*/
     .amount-display{
         height: 33px;
         margin-bottom: 8px;
@@ -281,6 +298,7 @@ footer{
     }
 
 
+    /*"Total for month" title*/
     #month-total-section h2{
         font-size: 18.5px;
         margin-top: 23px;
@@ -291,6 +309,7 @@ footer{
         margin-top: 0px;
     }
 
+    /*percentage reading*/
     #last-month-diff{
         font-size: 18px;
         margin-top: 52px;
