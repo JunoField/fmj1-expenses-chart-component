@@ -13,7 +13,7 @@
   
   <title>Frontend Mentor | Expenses chart component</title>
 
-  <script src="./addData.js" defer></script>
+  <script src="./spending.js" defer></script>
 </head>
 <body onload="addData()">
 
@@ -28,44 +28,44 @@
       
       <div id="bar-chart">
         <div class="chart-column" id="col-mon">
-          <div class="amount-display"><label id="amount-label-mon">$00.00</label></div>
-          <div class="bar" id="bar-mon"></div>
+          <div class="amount-display" id="amount-display-mon"><label id="amount-label-mon">$00.00</label></div>
+          <div class="bar" id="bar-mon" onmouseover="hoverBar('mon')" onmouseout="unHoverBar('mon')"></div>
           <label class="day-label">mon</label>
         </div>
 
         <div class="chart-column" id="col-tue">
-          <div class="amount-display"><label id="amount-label-tue">$00.00</label></div>
-          <div class="bar" id="bar-tue"></div>
+          <div class="amount-display" id="amount-display-tue"><label id="amount-label-tue">$00.00</label></div>
+          <div class="bar" id="bar-tue" onmouseover="hoverBar('tue')" onmouseout="unHoverBar('tue')"></div>
           <label class="day-label">tue</label>
         </div>
 
         <div class="chart-column" id="col-wed">
-          <div class="amount-display"><label id="amount-label-wed">$00.00</label></div>
-          <div class="bar" id="bar-wed"></div>
+          <div class="amount-display" id="amount-display-wed"><label id="amount-label-wed">$00.00</label></div>
+          <div class="bar" id="bar-wed" onmouseover="hoverBar('wed')" onmouseout="unHoverBar('wed')"></div>
           <label class="day-label">wed</label>
         </div>
 
         <div class="chart-column" id="col-thu">
-          <div class="amount-display"><label id="amount-label-thu">$00.00</label></div>
-          <div class="bar" id="bar-thu"></div>
+          <div class="amount-display" id="amount-display-thu"><label id="amount-label-thu">$00.00</label></div>
+          <div class="bar" id="bar-thu" onmouseover="hoverBar('thu')" onmouseout="unHoverBar('thu')"></div>
           <label class="day-label">thu</label>
         </div>
 
         <div class="chart-column" id="col-fri">
-          <div class="amount-display"><label id="amount-label-fri">$00.00</label></div>
-          <div class="bar" id="bar-fri"></div>
+          <div class="amount-display" id="amount-display-fri"><label id="amount-label-fri">$00.00</label></div>
+          <div class="bar" id="bar-fri" onmouseover="hoverBar('fri')" onmouseout="unHoverBar('fri')"></div>
           <label class="day-label">fri</label>
         </div>
 
         <div class="chart-column" id="col-sat">
-          <div class="amount-display"><label id="amount-label-sat">$00.00</label></div>
-          <div class="bar" id="bar-sat"></div>
+          <div class="amount-display" id="amount-display-sat"><label id="amount-label-sat">$00.00</label></div>
+          <div class="bar" id="bar-sat" onmouseover="hoverBar('sat')" onmouseout="unHoverBar('sat')"></div>
           <label class="day-label">sat</label>
         </div>
 
         <div class="chart-column" id="col-sun">
-          <div class="amount-display"><label id="amount-label-sun">$00.00</label></div>
-          <div class="bar" id="bar-sun"></div>
+          <div class="amount-display" id="amount-display-sun"><label id="amount-label-sun">$00.00</label></div>
+          <div class="bar" id="bar-sun" onmouseover="hoverBar('sun')" onmouseout="unHoverBar('sun')"></div>
           <label class="day-label">sun</label>
         </div>
       </div>

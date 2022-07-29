@@ -1,5 +1,6 @@
 :root{
     --softRed: hsl(10, 79%, 65%);
+    --softerRed: hsl(10, 79%, 80%);
     --cyan: hsl(186, 34%, 60%);
 
     --darkBrown: hsl(25, 47%, 15%);
@@ -96,6 +97,10 @@ main{
     margin-left: 6px;
 }
 
+.bar:hover{
+    background-color: var(--softerRed);
+}
+
 
 .day-label{
     text-align: center;
@@ -106,6 +111,7 @@ main{
 }
 
 .amount-display{
+    display: none;
     text-align: center;
     background-color: var(--darkBrown);
     height: 33px;
@@ -119,6 +125,10 @@ main{
     font-weight: 700;
     font-size: 18px;
 
+}
+
+.amount-display-active{
+    display: unset;
 }
 
 

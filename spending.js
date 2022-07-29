@@ -29,3 +29,12 @@ function getMax(arr){
     });
     return max;
 }
+
+
+function hoverBar(day){
+    document.getElementById("amount-display-" + day).classList.add("amount-display-active");
+}
+
+function unHoverBar(day){
+    document.getElementById("amount-display-" + day).classList.remove("amount-display-active");
+}
