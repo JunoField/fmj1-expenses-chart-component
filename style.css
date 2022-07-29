@@ -70,11 +70,7 @@ main{
 }
 
 #bar-chart{
-    position: absolute;
-    bottom: 140px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 88%;
+    height: 212px;
 
     display: flex;
     flex-direction: row;
@@ -83,6 +79,7 @@ main{
 }
 
 .chart-column{
+    margin-top: auto;
     display: flex;
     flex-direction: column;
 }
@@ -98,5 +95,5 @@ main{
     font-weight: 400;
     color: var(--mediumBrown);
     font-size: 12px;
-    margin-top: 12px;
+    margin-top: 10px;
 }
