@@ -153,11 +153,15 @@ hr{
     font-weight: 700;
     margin-top: 37px;
     margin-bottom: 0px;
+    font-size: 16px;
+
 }
 
 #last-month-diff-section label{
     color: var(--mediumBrown);
     margin-top: 0px;
+    font-size: 16px;
+
 }
 
 
@@ -190,13 +194,57 @@ hr{
         margin-top: 6px;
     }
 
+
+
     #spending-section{
         height: 511px;
         margin-top: 25px;
+        padding-inline: 40px;
     }
 
     #spending-section h1{
         font-size: 32px;
     }
+
+    #bar-chart{
+        height: 224px;
+        margin: auto -9px auto -9px;
+    }
+
+    .bar{
+        margin-right: 9px;
+        margin-left: 9px;
+    }
+
+    .day-label{
+        font-size: 15px;
+        margin-top: 8px;
+    }
+
+
+    hr{
+        margin-top: 34px;
+    }
+
+
+    #month-total-section h2{
+        font-size: 18.5px;
+        margin-top: 23px;
+    }
+
+    #month-total{
+        font-size: 48px;
+        margin-top: 0px;
+    }
+
+    #last-month-diff{
+        font-size: 18px;
+        margin-top: 52px;
+    }
+
+    #last-month-diff-section label{
+        font-size: 18px;
+    }
+
 
 }
