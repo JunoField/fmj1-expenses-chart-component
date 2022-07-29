@@ -86,9 +86,11 @@ main{
 
 .bar{
     background-color: var(--softRed);
-    height: 50px;
+    height: 50px; /*temporary - for dev*/
     width: 32px;
+    border-radius: 4px;
 }
+
 
 .day-label{
     text-align: center;
@@ -96,4 +98,58 @@ main{
     color: var(--mediumBrown);
     font-size: 12px;
     margin-top: 10px;
+}
+
+/*temporary for dev*/
+#col-wed .bar{
+    background-color: var(--cyan);
+}
+
+
+
+
+hr{
+    margin-top: 25px;
+    border: 1px solid lightgray; /*temporary - change to custom prop*/
+}
+
+#spending-stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#month-total-section h2{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--mediumBrown);
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+#month-total{
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--darkBrown);
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+#last-month-diff-section{
+    justify-self: flex-end;
+    text-align: right;
+
+}
+
+#last-month-diff{
+    color: var(--darkBrown);;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+#last-month-diff-section label{
+    color: var(--mediumBrown);
+    margin-top: 0px;
 }
