@@ -1,0 +1,69 @@
+:root{
+    --softRed: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+
+    --darkBrown: hsl(25, 47%, 15%);
+    --mediumBrown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --veryPaleOrange: hsl(33, 100%, 98%);
+    --white: hsl(0, 100%, 100%);
+}
+
+
+body{
+    background-color: var(--cream);
+}
+
+main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 91%;
+    margin: 0px 0px 0px 0px;
+}
+
+.card{
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-inline: 20px;
+
+}
+
+#balance-section{
+    background-color: var(--softRed);
+    height: 96px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--cream);
+    padding-block: 10px;
+
+    background-image: url("./images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: 62px;
+    background-position: right 24px center;
+}
+
+#balance-section h1{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+#balance-amount{
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+#spending-section{
+    margin-top: 15px;
+    height: 422px;
+    background-color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    padding-block: 8px;
+}
+
+#spending-section h1{
+    font-size: 24px;
+
+}
