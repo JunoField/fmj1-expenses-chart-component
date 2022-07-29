@@ -66,7 +66,7 @@ main{
 
 #spending-section h1{
     font-size: 24px;
-
+    color: var(--darkBrown);
 }
 
 #bar-chart{
@@ -167,5 +167,36 @@ hr{
 @media only screen and (min-width: 600px){
     main{
         width: 540px;
-}   
+    }  
+
+
+    .card{
+        border-radius: 20px;
+        padding-inline: 33px;
+    }
+
+    #balance-section{
+        height: 125px;
+        padding-block: 15px;
+    }
+
+
+    #balance-section h1{
+        font-size: 18px;
+    }
+
+    #balance-amount{
+        font-size: 32px;
+        margin-top: 6px;
+    }
+
+    #spending-section{
+        height: 511px;
+        margin-top: 25px;
+    }
+
+    #spending-section h1{
+        font-size: 32px;
+    }
+
 }
