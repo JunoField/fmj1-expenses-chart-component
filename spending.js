@@ -11,6 +11,9 @@ function addData(){
             document.getElementById("amount-label-" + item.day).innerHTML = "$" + item.amount.toString();
         });
     })
+
+    highlightCurrentDay();
+
 }
 
 //get data from JSON file
@@ -29,6 +32,13 @@ function getMax(arr){
         }
     });
     return max;
+}
+
+function highlightCurrentDay(){
+    var date = new Date();
+    var daysOfWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+    document.getElementById("bar-" + daysOfWeek[date.getDay()]).classList.add("bar-current-day");
+    
 }
 
 
