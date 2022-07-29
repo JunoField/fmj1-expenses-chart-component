@@ -71,24 +71,30 @@ main{
 
 #bar-chart{
     height: 212px;
-
+    flex-basis: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
+    margin: auto -5px auto -5px;
 }
 
 .chart-column{
     margin-top: auto;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .bar{
     background-color: var(--softRed);
     height: 50px; /*temporary - for dev*/
-    width: 32px;
+    /*32px*/
     border-radius: 4px;
+    margin-right: 6px;
+    margin-left: 6px;
 }
 
 
@@ -152,4 +158,14 @@ hr{
 #last-month-diff-section label{
     color: var(--mediumBrown);
     margin-top: 0px;
+}
+
+
+
+/*Desktop Changes:*/
+
+@media only screen and (min-width: 600px){
+    main{
+        width: 540px;
+}   
 }
