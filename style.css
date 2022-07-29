@@ -61,9 +61,42 @@ main{
     background-color: var(--white);
     font-family: 'DM Sans', sans-serif;
     padding-block: 8px;
+    position: relative;
 }
 
 #spending-section h1{
     font-size: 24px;
 
+}
+
+#bar-chart{
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.chart-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.bar{
+    background-color: var(--softRed);
+    height: 50px;
+    width: 32px;
+}
+
+.day-label{
+    text-align: center;
+    font-weight: 400;
+    color: var(--mediumBrown);
+    font-size: 12px;
+    margin-top: 12px;
 }
