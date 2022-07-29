@@ -8,6 +8,7 @@ function addData(){
         data.forEach(item => {
             var newHeight = (item.amount / max) * MAX_HEIGHT_PX;
             document.getElementById("bar-" + item.day).style.height = (newHeight.toString() + 'px'); //set height of bar to match value proportionally
+            document.getElementById("amount-label-" + item.day).innerHTML = "$" + item.amount.toString();
         });
     })
 }
