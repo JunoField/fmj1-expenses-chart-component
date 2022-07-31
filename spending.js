@@ -36,7 +36,7 @@ function getMax(arr){
 
 function highlightCurrentDay(){
     var date = new Date();
-    var daysOfWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+    var daysOfWeek = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
     document.getElementById("bar-" + daysOfWeek[date.getDay()]).classList.add("bar-current-day");
     
 }
